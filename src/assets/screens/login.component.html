@@ -1,0 +1,16 @@
+
+<style>
+    h1{
+        font-weight: normal; 
+    }
+</style>
+
+<h1 >Login</h1>
+<form (ngSubmit)="loginCheck()">
+<div>Email:<input [(ngModel)]=login.email name='email' /></div>
+<div>Password:<input [(ngModel)]=login.password name='password'  /></div>
+<button type="submit" >Login</button>
+<p>{{token}}</p>
+</form>
+
+
